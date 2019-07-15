@@ -1,0 +1,822 @@
+{
+  "levels": [
+    {
+      "name": "Level 1",
+      "description": "Easy",
+      "gradientValue1": "#303F9F",
+      "gradientValue2": "#1976D2",
+      "levelNumber": 1,
+      "questions": [
+        {
+          "countryName": "France",
+          "answer": 0
+        },
+        {
+          "countryName": "Poland",
+          "answer": 1
+        },
+        {
+          "countryName": "Spain",
+          "answer": 2
+        },
+        {
+          "countryName": "Germany",
+          "answer": 3
+        },
+        {
+          "countryName": "Russia",
+          "answer": 4
+        },
+        {
+          "countryName": "China",
+          "answer": 5
+        },
+        {
+          "countryName": "Argentina",
+          "answer": 6
+        },
+        {
+          "countryName": "Australia",
+          "answer": 7
+        },
+        {
+          "countryName": "Mexico",
+          "answer": 8
+        },
+        {
+          "countryName": "Brazil",
+          "answer": 9
+        },
+        {
+          "countryName": "Costa Rica",
+          "answer": 10
+        },
+        {
+          "countryName": "Peru",
+          "answer": 11
+        },
+        {
+          "countryName": "Czechia",
+          "answer": 12
+        },
+        {
+          "countryName": "Hungary",
+          "answer": 13
+        },
+        {
+          "countryName": "South Africa",
+          "answer": 14
+        },
+        {
+          "countryName": "Egypt",
+          "answer": 15
+        },
+        {
+          "countryName": "South Korea",
+          "answer": 16
+        },
+        {
+          "countryName": "Ireland",
+          "answer": 17
+        },
+        {
+          "countryName": "Israel",
+          "answer": 18
+        },
+        {
+          "countryName": "Italy",
+          "answer": 19
+        },
+        {
+          "countryName": "United Kingdom",
+          "answer": 20
+        },
+        {
+          "countryName": "United States",
+          "answer": 21
+        },
+        {
+          "countryName": "Denmark",
+          "answer": 22
+        },
+        {
+          "countryName": "Panama",
+          "answer": 23
+        },
+        {
+          "countryName": "India",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Paris",
+        "Warsaw",
+        "Madrid",
+        "Berlin",
+        "Moscow",
+        "Bejing",
+        "Buenos Aries",
+        "Canberra",
+        "Mexico City",
+        "Brasilia",
+        "San Jose",
+        "Lima",
+        "Prague",
+        "Budapest",
+        "Cape Town",
+        "Cairo",
+        "Seoul",
+        "Dublin",
+        "Jerusalem",
+        "Rome",
+        "London",
+        "Washington D.C.",
+        "Copenhagen",
+        "Panama City",
+        "New Delhi",
+        "Tokyo"
+      ]
+    },
+    {
+      "name": "Level 2",
+      "description": "Medium",
+      "gradientValue1": "#2E7D32",
+      "gradientValue2": "#4DB6AC",
+      "levelNumber": 2,
+      "questions": [
+        {
+          "countryName": "Austria",
+          "answer": 0
+        },
+        {
+          "countryName": "Bahamas",
+          "answer": 1
+        },
+        {
+          "countryName": "Morocco",
+          "answer": 2
+        },
+        {
+          "countryName": "Afghanistan",
+          "answer": 3
+        },
+        {
+          "countryName": "Netherlands",
+          "answer": 4
+        },
+        {
+          "countryName": "New Zealand",
+          "answer": 5
+        },
+        {
+          "countryName": "Norway",
+          "answer": 6
+        },
+        {
+          "countryName": "Portugal",
+          "answer": 7
+        },
+        {
+          "countryName": "Chile",
+          "answer": 8
+        },
+        {
+          "countryName": "Philippines",
+          "answer": 9
+        },
+        {
+          "countryName": "Romania",
+          "answer": 10
+        },
+        {
+          "countryName": "Sweden",
+          "answer": 11
+        },
+        {
+          "countryName": "Switzerland",
+          "answer": 12
+        },
+        {
+          "countryName": "Guatemala",
+          "answer": 13
+        },
+        {
+          "countryName": "Greece",
+          "answer": 14
+        },
+        {
+          "countryName": "Taiwan",
+          "answer": 15
+        },
+        {
+          "countryName": "Turkey",
+          "answer": 16
+        },
+        {
+          "countryName": "Iceland",
+          "answer": 17
+        },
+        {
+          "countryName": "Jamaica",
+          "answer": 18
+        },
+        {
+          "countryName": "Latvia",
+          "answer": 19
+        },
+        {
+          "countryName": "Uruguay",
+          "answer": 20
+        },
+        {
+          "countryName": "Canada",
+          "answer": 21
+        },
+        {
+          "countryName": "Indonesia",
+          "answer": 22
+        },
+        {
+          "countryName": "El Salvador",
+          "answer": 23
+        },
+        {
+          "countryName": "North Korea",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Vienna",
+        "Nassau",
+        "Rabat",
+        "Kabul",
+        "Amsterdam",
+        "Wellington",
+        "Oslo",
+        "Lisbon",
+        "Santiago",
+        "Manila",
+        "Bucharest",
+        "Stockholm",
+        "Bern",
+        "Guatemala City",
+        "Athens",
+        "Taipei",
+        "Ankara",
+        "Reykjavik",
+        "Kingston",
+        "Riga",
+        "Montevideo",
+        "Ottowa",
+        "Jakarta",
+        "San Salvador",
+        "Pyongyang"
+      ]
+    },
+    {
+      "name": "Level 3",
+      "description": "Medium",
+      "gradientValue1": "#9C27B0",
+      "gradientValue2": "#FF3D00",
+      "levelNumber": 3,
+      "questions": [
+        {
+          "countryName": "Albania",
+          "answer": 0
+        },
+        {
+          "countryName": "Algeria",
+          "answer": 1
+        },
+        {
+          "countryName": "Madagascar",
+          "answer": 2
+        },
+        {
+          "countryName": "Mali",
+          "answer": 3
+        },
+        {
+          "countryName": "Malta",
+          "answer": 4
+        },
+        {
+          "countryName": "Mauritius",
+          "answer": 5
+        },
+        {
+          "countryName": "Mongolia",
+          "answer": 6
+        },
+        {
+          "countryName": "Bangladesh",
+          "answer": 7
+        },
+        {
+          "countryName": "Belgium",
+          "answer": 8
+        },
+        {
+          "countryName": "Belize",
+          "answer": 9
+        },
+        {
+          "countryName": "Botswana",
+          "answer": 10
+        },
+        {
+          "countryName": "Bulgaria",
+          "answer": 11
+        },
+        {
+          "countryName": "Nepal",
+          "answer": 12
+        },
+        {
+          "countryName": "Nicaragua",
+          "answer": 13
+        },
+        {
+          "countryName": "Pakistan",
+          "answer": 14
+        },
+        {
+          "countryName": "Papua New Guinea",
+          "answer": 15
+        },
+        {
+          "countryName": "Paraguay",
+          "answer": 16
+        },
+        {
+          "countryName": "Qatar",
+          "answer": 17
+        },
+        {
+          "countryName": "Cuba",
+          "answer": 18
+        },
+        {
+          "countryName": "Cyprus",
+          "answer": 19
+        },
+        {
+          "countryName": "Colombia",
+          "answer": 20
+        },
+        {
+          "countryName": "Dominica",
+          "answer": 21
+        },
+        {
+          "countryName": "Dominican Republic",
+          "answer": 22
+        },
+        {
+          "countryName": "Saudi Arabia",
+          "answer": 23
+        },
+        {
+          "countryName": "Zimbabwe",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Tirana",
+        "Algiers",
+        "Antananarivo",
+        "Bamako",
+        "Valletta",
+        "Port Louis",
+        "Ulaanbaatar",
+        "Dhaka",
+        "Brussels",
+        "Belmopan",
+        "Gaborone",
+        "Sofia",
+        "Kathmandu",
+        "Managua",
+        "Islamabad",
+        "Port Moresby",
+        "Asuncion",
+        "Doha",
+        "Havana",
+        "Nicosia",
+        "Bogota",
+        "Roseau",
+        "Santo Domingo",
+        "Riyadh",
+        "Harare"
+      ]
+    },
+    {
+      "name": "Level 4",
+      "description": "Difficult",
+      "gradientValue1": "#303F9F",
+      "gradientValue2": "#7B1F9F",
+      "levelNumber": 4,
+      "questions": [
+        {
+          "countryName": "Belarus",
+          "answer": 0
+        },
+        {
+          "countryName": "Malawi",
+          "answer": 1
+        },
+        {
+          "countryName": "Benin",
+          "answer": 2
+        },
+        {
+          "countryName": "Angola",
+          "answer": 3
+        },
+        {
+          "countryName": "Armenia",
+          "answer": 4
+        },
+        {
+          "countryName": "Azerbaijan",
+          "answer": 5
+        },
+        {
+          "countryName": "Malaysia",
+          "answer": 6
+        },
+        {
+          "countryName": "Marshall Islands",
+          "answer": 7
+        },
+        {
+          "countryName": "Moldova",
+          "answer": 8
+        },
+        {
+          "countryName": "Monaco",
+          "answer": 9
+        },
+        {
+          "countryName": "Barbados",
+          "answer": 10
+        },
+        {
+          "countryName": "Bhutan",
+          "answer": 11
+        },
+        {
+          "countryName": "Montenegro",
+          "answer": 12
+        },
+        {
+          "countryName": "Oman",
+          "answer": 13
+        },
+        {
+          "countryName": "Cambodia",
+          "answer": 14
+        },
+        {
+          "countryName": "Cameroon",
+          "answer": 15
+        },
+        {
+          "countryName": "Jordan",
+          "answer": 16
+        },
+        {
+          "countryName": "Iraq",
+          "answer": 17
+        },
+        {
+          "countryName": "Uzbekistan",
+          "answer": 18
+        },
+        {
+          "countryName": "Laos",
+          "answer": 19
+        },
+        {
+          "countryName": "Lebanon",
+          "answer": 20
+        },
+        {
+          "countryName": "Liberia",
+          "answer": 21
+        },
+        {
+          "countryName": "Libya",
+          "answer": 22
+        },
+        {
+          "countryName": "Liechtenstein",
+          "answer": 23
+        },
+        {
+          "countryName": "Lithuania",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Minsk",
+        "Lilongwe",
+        "Porto-Novo",
+        "Luanda",
+        "Yerevan",
+        "Baku",
+        "Kuala Lumpur",
+        "Majuro",
+        "Chisinau",
+        "Monaco",
+        "Bridgetown",
+        "Thimphu",
+        "Podgorica",
+        "Muscat",
+        "Phnom Penh",
+        "Yaounde",
+        "Amman",
+        "Baghdad",
+        "Tashkent",
+        "Vientiane",
+        "Beirut",
+        "Monrovia",
+        "Tripoli",
+        "Vaduz",
+        "Vilnius"
+      ]
+    },
+    {
+      "name": "Level 5",
+      "description": "Difficult",
+      "gradientValue1": "#BF360C",
+      "gradientValue2": "#F57C00",
+      "levelNumber": 5,
+      "questions": [
+        {
+          "countryName": "Zambia",
+          "answer": 0
+        },
+        {
+          "countryName": "Luxembourg",
+          "answer": 1
+        },
+        {
+          "countryName": "Vietnam",
+          "answer": 2
+        },
+        {
+          "countryName": "Venezuela",
+          "answer": 3
+        },
+        {
+          "countryName": "Vanuatu",
+          "answer": 4
+        },
+        {
+          "countryName": "Ukraine",
+          "answer": 5
+        },
+        {
+          "countryName": "Tuvalu",
+          "answer": 6
+        },
+        {
+          "countryName": "Turkmenistan",
+          "answer": 7
+        },
+        {
+          "countryName": "South Sudan",
+          "answer": 8
+        },
+        {
+          "countryName": "Gabon",
+          "answer": 9
+        },
+        {
+          "countryName": "Ghana",
+          "answer": 10
+        },
+        {
+          "countryName": "Grenada",
+          "answer": 11
+        },
+        {
+          "countryName": "Guinea",
+          "answer": 12
+        },
+        {
+          "countryName": "Guyana",
+          "answer": 13
+        },
+        {
+          "countryName": "Sri Lanka",
+          "answer": 14
+        },
+        {
+          "countryName": "Somalia",
+          "answer": 15
+        },
+        {
+          "countryName": "Solomon Islands",
+          "answer": 16
+        },
+        {
+          "countryName": "Slovenia",
+          "answer": 17
+        },
+        {
+          "countryName": "Slovakia",
+          "answer": 18
+        },
+        {
+          "countryName": "Singapore",
+          "answer": 19
+        },
+        {
+          "countryName": "Serbia",
+          "answer": 20
+        },
+        {
+          "countryName": "Palestine",
+          "answer": 21
+        },
+        {
+          "countryName": "Mozambique",
+          "answer": 22
+        },
+        {
+          "countryName": "Mauritania",
+          "answer": 23
+        },
+        {
+          "countryName": "Samoa",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Lusaka",
+        "Luxembourg (city)",
+        "Hanoi",
+        "Caracas",
+        "Port Vila",
+        "Kiev",
+        "Funafuti",
+        "Ashgabat",
+        "Juba",
+        "Libreville",
+        "Accra",
+        "Saint George's",
+        "Conakry",
+        "Georgetown",
+        "Sri Jayawardenepura Kotte",
+        "Mogadishu",
+        "Honiara",
+        "Ljubljana",
+        "Bratislava",
+        "Singapore",
+        "Belgrade",
+        "Jerusalem (east)",
+        "Maputo",
+        "Nouakchott",
+        "Apia"
+      ]
+    },
+
+    {
+      "name": "Level 6",
+      "description": "Difficult",
+      "gradientValue1": "#E040FB",
+      "gradientValue2": "#4FC3F7",
+      "levelNumber": 6,
+      "questions": [
+        {
+          "countryName": "Andorra",
+          "answer": 0
+        },
+        {
+          "countryName": "Antigua and Barbuda",
+          "answer": 1
+        },
+        {
+          "countryName": "Bahrain",
+          "answer": 2
+        },
+        {
+          "countryName": "Bolivia",
+          "answer": 3
+        },
+        {
+          "countryName": "Bosnia and Herzegovina",
+          "answer": 4
+        },
+        {
+          "countryName": "Brunei",
+          "answer": 5
+        },
+        {
+          "countryName": "Burkina Faso",
+          "answer": 6
+        },
+        {
+          "countryName": "Burundi",
+          "answer": 7
+        },
+        {
+          "countryName": "Maldives",
+          "answer": 8
+        },
+        {
+          "countryName": "Micronesia",
+          "answer": 9
+        },
+        {
+          "countryName": "Myanmar",
+          "answer": 10
+        },
+        {
+          "countryName": "Cabo Verde",
+          "answer": 11
+        },
+        {
+          "countryName": "Central African Republic",
+          "answer": 12
+        },
+        {
+          "countryName": "Chad",
+          "answer": 13
+        },
+        {
+          "countryName": "Comoros",
+          "answer": 14
+        },
+        {
+          "countryName": "Congo, Democratic Republic of the",
+          "answer": 15
+        },
+        {
+          "countryName": "Congo, Republic of the",
+          "answer": 16
+        },
+        {
+          "countryName": "Cote d'Ivoire",
+          "answer": 17
+        },
+        {
+          "countryName": "Croatia",
+          "answer": 18
+        },
+        {
+          "countryName": "Namibia",
+          "answer": 19
+        },
+        {
+          "countryName": "Nauru",
+          "answer": 20
+        },
+        {
+          "countryName": "Niger",
+          "answer": 21
+        },
+        {
+          "countryName": "North Macedonia",
+          "answer": 22
+        },
+        {
+          "countryName": "Palau",
+          "answer": 23
+        },
+        {
+          "countryName": "Rwanda",
+          "answer": 24
+        }
+      ],
+      "answers": [
+        "Andorra la Vella",
+        "Saint John's",
+        "Manama",
+        "Sucre, La Paz",
+        "Sarajevo",
+        "Bandar Seri Begawan",
+        "Ouagadougou",
+        "Gitega",
+        "Male",
+        "Palikir",
+        "Naypyidaw",
+        "Praia",
+        "Bangui",
+        "N'Djamena",
+        "Moroni",
+        "Kinshasa",
+        "Brazzaville",
+        "Yamoussoukro",
+        "Zagreb",
+        "Windhoek",
+        "Yaren District",
+        "Niamey",
+        "Skopje",
+        "Ngerulmud",
+        "Kigali"
+      ]
+    }
+  ]
+}
