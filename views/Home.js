@@ -3,6 +3,7 @@ import { LinearGradient } from "expo";
 import { Feather } from "@expo/vector-icons";
 import { Text, Surface, TouchableRipple } from "react-native-paper";
 import { View, StyleSheet, ScrollView, AsyncStorage, Alert } from "react-native";
+import { scale } from "../functions/AutoScale";
 import Navbar from "./Navbar";
 const appData = require("../appContent.json");
 
@@ -41,8 +42,8 @@ export default class Home extends React.Component {
 
           {appData.levels.map((level, index) => (
             <Surface key={index} style={styles.surface}>
-              <LinearGradient style={{ borderRadius: 10 }} colors={[level.gradientValue1, level.gradientValue2]} start={[0, 1]} end={[1, 0]}>
-                <TouchableRipple style={{ padding: 2 }} onPress={() => (this.state.levelsPassed.indexOf(level.levelNumber) !== -1 ? this.props.navigation.navigate("GameView", { levelNumber: level.levelNumber }) : Alert.alert(`You must complete level ${level.levelNumber - 1} before this level can be unlocked.`))}>
+              <LinearGradient style={{ borderRadius: scale(10) }} colors={[level.gradientValue1, level.gradientValue2]} start={[0, 1]} end={[1, 0]}>
+                <TouchableRipple style={{ padding: scale(2) }} onPress={() => (this.state.levelsPassed.indexOf(level.levelNumber) !== -1 ? this.props.navigation.navigate("GameView", { levelNumber: level.levelNumber }) : Alert.alert(`You must complete level ${level.levelNumber - 1} before this level can be unlocked.`))}>
                   <View>
                     <Text style={styles.headerText}>{level.name}</Text>
                     <Text style={styles.descriptionText}>{level.description}</Text>
@@ -70,28 +71,28 @@ const styles = StyleSheet.create({
 
   surface: {
     elevation: 9,
-    borderRadius: 10,
-    margin: 8
+    borderRadius: scale(10),
+    margin: scale(8)
   },
 
   headerText: {
-    marginLeft: 10,
-    marginBottom: 2.5,
-    marginTop: 10,
-    fontSize: 22,
+    marginLeft: scale(10),
+    marginBottom: scale(2.5),
+    marginTop: scale(10),
+    fontSize: scale(23),
     color: "white"
   },
 
   descriptionText: {
     color: "white",
-    fontSize: 15,
-    paddingLeft: 10
+    fontSize: scale(15),
+    paddingLeft: scale(10)
   },
 
   iconView: {
-    marginTop: 15,
-    marginRight: 10,
-    marginBottom: 10,
+    marginTop: scale(15),
+    marginRight: scale(10),
+    marginBottom: scale(10),
     flexDirection: "row",
     justifyContent: "flex-end"
   }

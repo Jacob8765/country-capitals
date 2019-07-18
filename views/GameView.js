@@ -4,7 +4,10 @@ import { Feather } from "@expo/vector-icons";
 import { LinearGradient, AdMobInterstitial, AdMobBanner } from "expo";
 import { Button, Subheading, Text } from "react-native-paper";
 import { ScrollView } from "react-native-gesture-handler";
+import { scale } from "../functions/AutoScale";
 const appData = require("../appContent.json");
+
+const PRODUCTION = false
 
 const styles = StyleSheet.create({
   container: {
@@ -12,9 +15,9 @@ const styles = StyleSheet.create({
   },
 
   button: {
-    paddingTop: 7,
-    paddingBottom: 7,
-    margin: 5,
+    paddingTop: scale(7),
+    paddingBottom: scale(7),
+    margin: scale(5),
     width: "100%",
     color: "black"
   },
@@ -27,54 +30,54 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     flexDirection: "row",
     flexWrap: "wrap",
-    paddingHorizontal: 10
+    paddingHorizontal: scale(10)
   },
 
   questionText: {
-    fontSize: 30,
+    fontSize: scale(30),
     color: "white",
-    padding: 8
+    padding: scale(8)
   },
 
   questionCountry: {
-    fontSize: 44,
+    fontSize: scale(44),
     color: "white",
-    padding: 5,
-    marginTop: -8,
-    lineHeight: 50,
+    padding: scale(5),
+    marginTop: scale(-8),
+    lineHeight: scale(50),
     textAlign: "center"
   },
 
   questionTextContainer: {
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 20,
+    marginTop: scale(20),
     flex: 0.8
   },
 
   statistics: {
     flexDirection: "row",
     justifyContent: "space-between",
-    padding: 10
+    padding: scale(10)
   },
 
   statisticsText: {
-    fontSize: 17,
+    fontSize: scale(17),
     color: "white"
   },
 
   gameEndScoreTextContainer: {
-    margin: 50,
+    margin: scale(50),
     flexDirection: "column",
     justifyContent: "center"
   },
 
   answeredQuestions: {
-    padding: 10
+    padding: scale(10)
   },
 
   answeredQuestion: {
-    marginBottom: 20,
+    marginBottom: scale(20),
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center"
@@ -82,20 +85,20 @@ const styles = StyleSheet.create({
 
   questionNumberText: { 
     color: "white",
-    paddingBottom: 1
+    paddingBottom: scale(1)
   },
 
   questionQuestionText: {
-    fontSize: 16,
+    fontSize: scale(16),
     color: "white",
-    paddingBottom: 1,
-    maxWidth: 275
+    paddingBottom: scale(1),
+    maxWidth: scale(275)
   },
 
   yourAnswerText: {
-    fontSize: 14,
+    fontSize: scale(14),
     color: "white",
-    maxWidth: 275
+    maxWidth: scale(275)
   }
 });
 
@@ -125,7 +128,7 @@ export default class GameView extends React.Component {
   }
 
   componentDidMount() {
-    AdMobInterstitial.setAdUnitID("ca-app-pub-7664984868766495/2082796458"); //ca-app-pub-3940256099942544/1033173712
+    AdMobInterstitial.setAdUnitID(PRODUCTION ? "ca-app-pub-7664984868766495/2082796458" : "ca-app-pub-3940256099942544/1033173712");
     AdMobInterstitial.setTestDeviceID("EMULATOR");
     AdMobInterstitial.requestAdAsync();
 
@@ -232,7 +235,7 @@ export default class GameView extends React.Component {
           <View style={{ justifyContent: "center" }}>
             <AdMobBanner
               bannerSize="fullBanner"
-              adUnitID="ca-app-pub-7664984868766495/4583523632" // ca-app-pub-3940256099942544/6300978111
+              adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/4583523632" : "ca-app-pub-3940256099942544/6300978111"}
               testDeviceID="EMULATOR"
               onDidFailToReceiveAdWithError={this.bannerError}
             />
@@ -267,21 +270,21 @@ export default class GameView extends React.Component {
           <View style={{ justifyContent: "center" }}>
             <AdMobBanner
               bannerSize="fullBanner"
-              adUnitID="ca-app-pub-7664984868766495/1892946966" // ca-app-pub-3940256099942544/6300978111
+              adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/1892946966" : "ca-app-pub-3940256099942544/6300978111"}
               testDeviceID="EMULATOR"
               onDidFailToReceiveAdWithError={this.bannerError}
             />
           </View>
 
           <ScrollView>
-            <View style={[styles.gameEndScoreTextContainer, { marginTop: 25 }]}>
+            <View style={[styles.gameEndScoreTextContainer, { marginTop: scale(25) }]}>
               <Subheading style={[styles.questionText, { textAlign: "center" }]}>You scored {this.state.percentCorrect}%</Subheading>
               {this.state.percentCorrect == 100 ? (
-                <Button mode="contained" style={{ padding: 5, paddingHorizontal: 10, marginTop: 5 }} onPress={() => this.props.navigation.navigate("Home")}>
+                <Button mode="contained" style={{ padding: scale(5), paddingHorizontal: scale(10), marginTop: scale(5) }} onPress={() => this.props.navigation.navigate("Home")}>
                   Continue
                 </Button>
               ) : (
-                <Button mode="contained" style={{ padding: 5, paddingHorizontal: 10, marginTop: 3 }} onPress={this.resetLevel}>
+                <Button mode="contained" style={{ padding: scale(5), paddingHorizontal: scale(10), marginTop: scale(3) }} onPress={this.resetLevel}>
                   Retry level
                 </Button>
               )}
@@ -296,7 +299,7 @@ export default class GameView extends React.Component {
                     <Text style={styles.yourAnswerText}>Correct answer: {question.answerChoices[question.correctAnswer]}</Text>
                   </View>
 
-                  <Feather name={question.answerClicked == question.correctAnswer ? "check-circle" : "x-circle"} size={56} color={question.answerClicked == question.correctAnswer ? "green" : "red"} />
+                  <Feather name={question.answerClicked == question.correctAnswer ? "check-circle" : "x-circle"} size={scale(56)} color={question.answerClicked == question.correctAnswer ? "green" : "red"} />
                 </View>
               ))}
             </View>

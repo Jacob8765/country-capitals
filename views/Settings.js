@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, AsyncStorage } from "react-native";
 import { Switch, Text, Divider } from "react-native-paper";
 import { WebBrowser } from "expo";
+import { scale } from "../functions/AutoScale";
 import Navbar from "./Navbar";
 
 const styles = StyleSheet.create({
@@ -13,9 +14,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     flexDirection: "row",
     alignItems: "center",
-    padding: 10,
-    paddingVertical: 20,
-    marginTop: 10
+    padding: scale(10),
+    paddingVertical: scale(20),
+    marginTop: scale(10)
   }
 });
 
@@ -63,13 +64,13 @@ export default class Settings extends React.Component {
           <Navbar showBackButton={true} showSettingsButton={false} navigation={this.props.navigation} darkTheme={this.state.darkTheme == "true" ? true : false} />
 
           <View style={styles.item}>
-            <Text style={{ fontSize: 20, color: this.state.darkTheme == "true" ? "white" : "black" }}>Dark theme</Text>
+            <Text style={{ fontSize: scale(20), color: this.state.darkTheme == "true" ? "white" : "black" }}>Dark theme</Text>
             <Switch value={this.state.darkTheme == "true" ? true : false} onValueChange={() => this.setItem("darkTheme")} />
           </View>
 
           <Divider />
 
-          <Text style={{ color: this.state.darkTheme == "true" ? "white" : "blue", padding: 10, paddingVertical: 20, fontSize: 15 }} onPress={this.openPrivacyPolicy}>
+          <Text style={{ color: this.state.darkTheme == "true" ? "white" : "blue", padding: scale(10), paddingVertical: scale(20), fontSize: scale(15) }} onPress={this.openPrivacyPolicy}>
             Privacy policy
           </Text>
         </View>
