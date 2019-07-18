@@ -1,7 +1,9 @@
 import React from "react";
 import { View, StyleSheet, Animated, AsyncStorage, Dimensions } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import { LinearGradient, AdMobInterstitial, AdMobBanner } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
+import { AdMobBanner } from 'expo-ads-admob'
+import { AdMobInterstitial } from 'expo-ads-admob'
 import { Button, Subheading, Text } from "react-native-paper";
 import { ScrollView } from "react-native-gesture-handler";
 import { scale } from "../functions/AutoScale";

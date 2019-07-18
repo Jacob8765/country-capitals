@@ -1,5 +1,5 @@
 import React from "react";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { Feather } from "@expo/vector-icons";
 import { Text, Surface, TouchableRipple } from "react-native-paper";
 import { View, StyleSheet, ScrollView, AsyncStorage, Alert } from "react-native";
