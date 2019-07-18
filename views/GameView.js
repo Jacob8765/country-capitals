@@ -7,8 +7,8 @@ import { ScrollView } from "react-native-gesture-handler";
 import { scale } from "../functions/AutoScale";
 const appData = require("../appContent.json");
 
-const PRODUCTION = false
-const {width, height} = Dimensions.get("window")
+const PRODUCTION = false;
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   container: {
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
 
-  questionNumberText: { 
+  questionNumberText: {
     fontSize: scale(16),
     color: "white",
     paddingBottom: scale(1)
@@ -234,13 +234,8 @@ export default class GameView extends React.Component {
     if (!this.state.gameOver) {
       return (
         <LinearGradient style={styles.container} colors={this.state.darkTheme ? ["#303F9F", "#7B1FA2"] : ["#3949AB", "#4FC3F7"]} start={[0, 1]} end={[1, 0]}>
-          <View style={{ justifyContent: "center" }}>
-            <AdMobBanner
-              bannerSize="fullBanner"
-              adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/4583523632" : "ca-app-pub-3940256099942544/6300978111"}
-              testDeviceID="EMULATOR"
-              onDidFailToReceiveAdWithError={this.bannerError}
-            />
+          <View>
+            <AdMobBanner bannerSize="fullBanner" adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/4583523632" : "ca-app-pub-3940256099942544/6300978111"} testDeviceID="EMULATOR" onDidFailToReceiveAdWithError={this.bannerError} />
           </View>
 
           <View style={styles.questionTextContainer}>
@@ -269,13 +264,8 @@ export default class GameView extends React.Component {
     } else {
       return (
         <LinearGradient style={styles.container} colors={this.state.darkTheme ? ["#303F9F", "#7B1FA2"] : ["#3949AB", "#4FC3F7"]} start={[0, 1]} end={[1, 0]}>
-          <View style={{ justifyContent: "center" }}>
-            <AdMobBanner
-              bannerSize="fullBanner"
-              adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/1892946966" : "ca-app-pub-3940256099942544/6300978111"}
-              testDeviceID="EMULATOR"
-              onDidFailToReceiveAdWithError={this.bannerError}
-            />
+          <View>
+            <AdMobBanner bannerSize="fullBanner" adUnitID={PRODUCTION ? "ca-app-pub-7664984868766495/1892946966" : "ca-app-pub-3940256099942544/6300978111"} testDeviceID="EMULATOR" onDidFailToReceiveAdWithError={this.bannerError} />
           </View>
 
           <ScrollView>
