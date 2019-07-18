@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Animated, AsyncStorage } from "react-native";
+import { View, StyleSheet, Animated, AsyncStorage, Dimensions } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { LinearGradient, AdMobInterstitial, AdMobBanner } from "expo";
 import { Button, Subheading, Text } from "react-native-paper";
@@ -8,6 +8,7 @@ import { scale } from "../functions/AutoScale";
 const appData = require("../appContent.json");
 
 const PRODUCTION = false
+const {width, height} = Dimensions.get("window")
 
 const styles = StyleSheet.create({
   container: {
@@ -34,13 +35,13 @@ const styles = StyleSheet.create({
   },
 
   questionText: {
-    fontSize: scale(30),
+    fontSize: scale(35),
     color: "white",
-    padding: scale(8)
+    padding: scale(10)
   },
 
   questionCountry: {
-    fontSize: scale(44),
+    fontSize: scale(48),
     color: "white",
     padding: scale(5),
     marginTop: scale(-8),
@@ -62,43 +63,44 @@ const styles = StyleSheet.create({
   },
 
   statisticsText: {
-    fontSize: scale(17),
+    fontSize: scale(18),
     color: "white"
   },
 
   gameEndScoreTextContainer: {
-    margin: scale(50),
+    margin: scale(60),
     flexDirection: "column",
     justifyContent: "center"
   },
 
   answeredQuestions: {
-    padding: scale(10)
+    padding: scale(12)
   },
 
   answeredQuestion: {
-    marginBottom: scale(20),
+    marginBottom: scale(22),
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center"
   },
 
   questionNumberText: { 
+    fontSize: scale(16),
     color: "white",
     paddingBottom: scale(1)
   },
 
   questionQuestionText: {
-    fontSize: scale(16),
+    fontSize: scale(18),
     color: "white",
     paddingBottom: scale(1),
-    maxWidth: scale(275)
+    maxWidth: width * 0.8
   },
 
   yourAnswerText: {
-    fontSize: scale(14),
+    fontSize: scale(16),
     color: "white",
-    maxWidth: scale(275)
+    maxWidth: width * 0.8
   }
 });
 
@@ -299,7 +301,7 @@ export default class GameView extends React.Component {
                     <Text style={styles.yourAnswerText}>Correct answer: {question.answerChoices[question.correctAnswer]}</Text>
                   </View>
 
-                  <Feather name={question.answerClicked == question.correctAnswer ? "check-circle" : "x-circle"} size={scale(56)} color={question.answerClicked == question.correctAnswer ? "green" : "red"} />
+                  <Feather name={question.answerClicked == question.correctAnswer ? "check-circle" : "x-circle"} size={scale(58)} color={question.answerClicked == question.correctAnswer ? "green" : "red"} />
                 </View>
               ))}
             </View>

@@ -49,7 +49,7 @@ export default class Home extends React.Component {
                     <Text style={styles.descriptionText}>{level.description}</Text>
 
                     <View style={styles.iconView}>
-                      <Feather name={this.state.levelsPassed.indexOf(level.levelNumber) !== -1 ? "play" : "lock"} size={38} color="white" />
+                      <Feather name={this.state.levelsPassed.indexOf(level.levelNumber) !== -1 ? "play" : "lock"} size={42} color="white" />
                     </View>
                   </View>
                 </TouchableRipple>
@@ -72,7 +72,8 @@ const styles = StyleSheet.create({
   surface: {
     elevation: 9,
     borderRadius: scale(10),
-    margin: scale(8)
+    marginHorizontal: scale(10),
+    marginVertical: scale(6)
   },
 
   headerText: {
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
   },
 
   iconView: {
-    marginTop: scale(15),
+    marginTop: scale(20),
     marginRight: scale(10),
     marginBottom: scale(10),
     flexDirection: "row",
